@@ -1,0 +1,44 @@
+-- Made By Someone
+
+local Hub = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local ExtraHubText = Instance.new("TextLabel")
+local JailbreakButton = Instance.new("TextButton")
+
+--Properties:
+
+Hub.Name = "Hub"
+Hub.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = Hub
+main.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+main.Position = UDim2.new(0.352941185, 0, 0.230674848, 0)
+main.Size = UDim2.new(0, 511, 0, 272)
+main.Active = true
+main.Draggable = true
+
+ExtraHubText.Name = "ExtraHubText"
+ExtraHubText.Parent = main
+ExtraHubText.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+ExtraHubText.BorderColor3 = Color3.fromRGB(49, 49, 49)
+ExtraHubText.Position = UDim2.new(0.00195694715, 0, 0.0036764706, 0)
+ExtraHubText.Size = UDim2.new(0, 167, 0, 50)
+ExtraHubText.Font = Enum.Font.SourceSansBold
+ExtraHubText.Text = "Extra Hub"
+ExtraHubText.TextColor3 = Color3.fromRGB(14, 255, 187)
+ExtraHubText.TextSize = 38.000
+
+JailbreakButton.Name = "JailbreakButton"
+JailbreakButton.Parent = main
+JailbreakButton.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+JailbreakButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+JailbreakButton.Position = UDim2.new(0.303326815, 0, 0.404411763, 0)
+JailbreakButton.Size = UDim2.new(0, 200, 0, 50)
+JailbreakButton.Font = Enum.Font.SourceSansBold
+JailbreakButton.Text = "Jailbreak"
+JailbreakButton.TextColor3 = Color3.fromRGB(255, 174, 10)
+JailbreakButton.TextSize = 28.000
+JailbreakButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/wawsdasdacx/ohascriptnrrewading/main/jbsaxcriptidk1"))();
+end)
