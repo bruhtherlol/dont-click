@@ -45,6 +45,8 @@ JailbreakButton.TextColor3 = Color3.fromRGB(255, 174, 10)
 JailbreakButton.TextSize = 28.000
 JailbreakButton.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/wawsdasdacx/ohascriptnrrewading/main/jbsaxcriptidk1"))();
+	main.Visible = false
+	openmain.Visible = true
 end)
 
 close.Name = "close"
@@ -74,6 +76,8 @@ PSXButton.TextColor3 = Color3.fromRGB(26, 255, 210)
 PSXButton.TextSize = 43.000
 PSXButton.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/pet_sim_x_lk.lua")()
+	main.Visible = false
+	openmain.Visible = true
 end)
 
 openmain.Name = "openmain"
