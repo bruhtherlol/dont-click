@@ -1,113 +1,21 @@
-
 -- Made By meheckerbrolol
 
 local Hub = Instance.new("ScreenGui")
-local main = Instance.new("Frame")
-local ExtraHubText = Instance.new("TextLabel")
-local JailbreakButton = Instance.new("TextButton")
-local close = Instance.new("TextButton")
-local PSXButton = Instance.new("TextButton")
-local TextButton = Instance.new("TextButton")
-local TextButton_2 = Instance.new("TextButton")
 local openmain = Instance.new("Frame")
 local open = Instance.new("TextButton")
+local main = Instance.new("ImageLabel")
+local JailbreakButton = Instance.new("TextButton")
+local PSXButton = Instance.new("TextButton")
+local DarkHubButton = Instance.new("TextButton")
+local BreakingPointButton = Instance.new("TextButton")
+local ExtraHubText = Instance.new("TextLabel")
+local close = Instance.new("TextButton")
 
 --Properties:
 
 Hub.Name = "Hub"
 Hub.Parent = game.CoreGui
-
-main.Name = "main"
-main.Parent = Hub
-main.Active = true
-main.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-main.Position = UDim2.new(0.373805583, 0, 0.220858902, 0)
-main.Size = UDim2.new(0, 511, 0, 272)
-main.Draggable = true
-
-ExtraHubText.Name = "ExtraHubText"
-ExtraHubText.Parent = main
-ExtraHubText.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-ExtraHubText.BorderColor3 = Color3.fromRGB(49, 49, 49)
-ExtraHubText.Position = UDim2.new(0.00195694715, 0, 0.0036764706, 0)
-ExtraHubText.Size = UDim2.new(0, 167, 0, 50)
-ExtraHubText.Font = Enum.Font.SourceSansBold
-ExtraHubText.Text = "Extra Hub"
-ExtraHubText.TextColor3 = Color3.fromRGB(14, 255, 187)
-ExtraHubText.TextSize = 38.000
-
-JailbreakButton.Name = "JailbreakButton"
-JailbreakButton.Parent = main
-JailbreakButton.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-JailbreakButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
-JailbreakButton.Position = UDim2.new(0.0880626366, 0, 0.658088207, 0)
-JailbreakButton.Size = UDim2.new(0, 200, 0, 50)
-JailbreakButton.Font = Enum.Font.SourceSansBold
-JailbreakButton.Text = "JailbreakAutorob"
-JailbreakButton.TextColor3 = Color3.fromRGB(255, 174, 10)
-JailbreakButton.TextSize = 28.000
-JailbreakButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/wawsdasdacx/ohascriptnrrewading/main/jbsaxcriptidk1"))();
-	main.Visible = false
-	openmain.Visible = true
-end)
-
-close.Name = "close"
-close.Parent = main
-close.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-close.BorderColor3 = Color3.fromRGB(49, 49, 49)
-close.Position = UDim2.new(0.93108952, 0, 0.0036764706, 0)
-close.Size = UDim2.new(0, 34, 0, 25)
-close.Font = Enum.Font.SourceSansBold
-close.Text = "X"
-close.TextColor3 = Color3.fromRGB(255, 0, 0)
-close.TextSize = 23.000
-close.MouseButton1Down:connect(function()
-	main.Visible = false
-	openmain.Visible = true
-end)
-
-PSXButton.Name = "PSXButton"
-PSXButton.Parent = main
-PSXButton.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-PSXButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
-PSXButton.Position = UDim2.new(0.0880626217, 0, 0.319852918, 0)
-PSXButton.Size = UDim2.new(0, 200, 0, 50)
-PSXButton.Font = Enum.Font.SourceSansBold
-PSXButton.Text = "PSX"
-PSXButton.TextColor3 = Color3.fromRGB(26, 255, 210)
-PSXButton.TextSize = 43.000
-PSXButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/pet_sim_x_lk.lua")()
-	main.Visible = false
-	openmain.Visible = true
-end)
-
-TextButton.Parent = main
-TextButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-TextButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.Position = UDim2.new(0.559686899, 0, 0.319852948, 0)
-TextButton.Size = UDim2.new(0, 200, 0, 50)
-TextButton.Font = Enum.Font.SourceSansBold
-TextButton.Text = "Dark Hub"
-TextButton.TextColor3 = Color3.fromRGB(154, 154, 154)
-TextButton.TextSize = 31.000
-TextButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("http://darkhub.xyz/remote-script.lua", true))()
-end)
-
-TextButton_2.Parent = main
-TextButton_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-TextButton_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_2.Position = UDim2.new(0.559686899, 0, 0.658088207, 0)
-TextButton_2.Size = UDim2.new(0, 200, 0, 50)
-TextButton_2.Font = Enum.Font.SourceSansBold
-TextButton_2.Text = "Breaking Point"
-TextButton_2.TextColor3 = Color3.fromRGB(255, 72, 16)
-TextButton_2.TextSize = 29.000
-TextButton_2.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/1iseo/breaking-point-public/main/main.lua"))()
-end)
+Hub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 openmain.Name = "openmain"
 openmain.Parent = Hub
@@ -126,4 +34,104 @@ open.TextSize = 12.000
 open.MouseButton1Down:connect(function()
 	openmain.Visible = false
 	main.Visible = true
+end)
+
+main.Name = "main"
+main.Parent = Hub
+main.AnchorPoint = Vector2.new(0.5, 0.5)
+main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+main.BackgroundTransparency = 1.000
+main.Position = UDim2.new(0.627102315, 9, 0.523312807, 0)
+main.Size = UDim2.new(0, 511, 0, 272)
+main.Visible = false
+main.ZIndex = 2
+main.Image = "rbxassetid://3570695787"
+main.ImageColor3 = Color3.fromRGB(49, 49, 49)
+main.ScaleType = Enum.ScaleType.Slice
+main.SliceCenter = Rect.new(100, 100, 100, 100)
+main.SliceScale = 0.120
+main.Active = true
+main.Draggable = true
+
+JailbreakButton.Name = "JailbreakButton"
+JailbreakButton.Parent = main
+JailbreakButton.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+JailbreakButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+JailbreakButton.Position = UDim2.new(0.0880626366, 0, 0.658088207, 0)
+JailbreakButton.Size = UDim2.new(0, 200, 0, 50)
+JailbreakButton.Font = Enum.Font.SourceSansBold
+JailbreakButton.Text = "Jailbreak"
+JailbreakButton.TextColor3 = Color3.fromRGB(255, 174, 10)
+JailbreakButton.TextSize = 28.000
+JailbreakButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/wawsdasdacx/ohascriptnrrewading/main/jbsaxcriptidk1"))()
+end)
+
+PSXButton.Name = "PSXButton"
+PSXButton.Parent = main
+PSXButton.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+PSXButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+PSXButton.Position = UDim2.new(0.0880626217, 0, 0.319852918, 0)
+PSXButton.Size = UDim2.new(0, 200, 0, 50)
+PSXButton.Font = Enum.Font.SourceSansBold
+PSXButton.Text = "PSX"
+PSXButton.TextColor3 = Color3.fromRGB(26, 255, 210)
+PSXButton.TextSize = 43.000
+PSXButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/pet_sim_x_lk.lua")()
+end)
+
+DarkHubButton.Name = "DarkHubButton"
+DarkHubButton.Parent = main
+DarkHubButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+DarkHubButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+DarkHubButton.Position = UDim2.new(0.559686899, 0, 0.319852948, 0)
+DarkHubButton.Size = UDim2.new(0, 200, 0, 50)
+DarkHubButton.Font = Enum.Font.SourceSansBold
+DarkHubButton.Text = "Dark Hub"
+DarkHubButton.TextColor3 = Color3.fromRGB(154, 154, 154)
+DarkHubButton.TextSize = 31.000
+DarkHubButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("http://darkhub.xyz/remote-script.lua", true))()
+end)
+
+BreakingPointButton.Name = "BreakingPointButton"
+BreakingPointButton.Parent = main
+BreakingPointButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+BreakingPointButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+BreakingPointButton.Position = UDim2.new(0.559686899, 0, 0.658088207, 0)
+BreakingPointButton.Size = UDim2.new(0, 200, 0, 50)
+BreakingPointButton.Font = Enum.Font.SourceSansBold
+BreakingPointButton.Text = "Breaking Point"
+BreakingPointButton.TextColor3 = Color3.fromRGB(255, 72, 16)
+BreakingPointButton.TextSize = 29.000
+BreakingPointButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/1iseo/breaking-point-public/main/main.lua"))()
+end)
+
+ExtraHubText.Name = "ExtraHubText"
+ExtraHubText.Parent = main
+ExtraHubText.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+ExtraHubText.BorderColor3 = Color3.fromRGB(49, 49, 49)
+ExtraHubText.Position = UDim2.new(0, 8, 0, 8)
+ExtraHubText.Size = UDim2.new(0, 142, 0, 42)
+ExtraHubText.Font = Enum.Font.SourceSansBold
+ExtraHubText.Text = "Extra Hub"
+ExtraHubText.TextColor3 = Color3.fromRGB(20, 255, 220)
+ExtraHubText.TextSize = 36.000
+ExtraHubText.TextWrapped = true
+
+close.Name = "close"
+close.Parent = main
+close.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+close.BorderColor3 = Color3.fromRGB(49, 49, 49)
+close.Position = UDim2.new(0, 442, 0, 8)
+close.Size = UDim2.new(0, 62, 0, 42)
+close.Font = Enum.Font.SourceSansBold
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(255, 0, 0)
+close.TextSize = 34.000
+close.MouseButton1Down:connect(function()
+	main.Visible = false
+	openmain.Visible = true
 end)
