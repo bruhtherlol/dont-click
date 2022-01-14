@@ -1,5 +1,5 @@
 
--- Made By Someone
+-- Made By meheckerbrolol
 
 local Hub = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
@@ -43,7 +43,7 @@ JailbreakButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
 JailbreakButton.Position = UDim2.new(0.0880626366, 0, 0.658088207, 0)
 JailbreakButton.Size = UDim2.new(0, 200, 0, 50)
 JailbreakButton.Font = Enum.Font.SourceSansBold
-JailbreakButton.Text = "Jailbreak"
+JailbreakButton.Text = "JailbreakAutorob"
 JailbreakButton.TextColor3 = Color3.fromRGB(255, 174, 10)
 JailbreakButton.TextSize = 28.000
 JailbreakButton.MouseButton1Down:connect(function()
