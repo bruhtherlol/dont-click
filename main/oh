@@ -17,6 +17,7 @@ Hub.Parent = game.CoreGui
 main.Name = "main"
 main.Parent = Hub
 main.Active = true
+main.Visible = false
 main.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
 main.Position = UDim2.new(0.373805583, 0, 0.220858902, 0)
 main.Size = UDim2.new(0, 511, 0, 272)
