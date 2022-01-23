@@ -1,5 +1,4 @@
 -- Made By meheckerbrolol
-
 local Hub = Instance.new("ScreenGui")
 local openmain = Instance.new("Frame")
 local open = Instance.new("TextButton")
@@ -10,6 +9,7 @@ local DarkHubButton = Instance.new("TextButton")
 local BreakingPointButton = Instance.new("TextButton")
 local ExtraHubText = Instance.new("TextLabel")
 local close = Instance.new("TextButton")
+local InfiniteYieldButton = Instance.new("TextButton")
 
 --Properties:
 
@@ -39,9 +39,9 @@ end)
 main.Name = "main"
 main.Parent = Hub
 main.AnchorPoint = Vector2.new(0.5, 0.5)
-main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+main.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
 main.BackgroundTransparency = 1.000
-main.Position = UDim2.new(0.627102315, 9, 0.523312807, 0)
+main.Position = UDim2.new(0.701694489, 9, 0.540490746, 0)
 main.Size = UDim2.new(0, 511, 0, 272)
 main.Visible = false
 main.ZIndex = 2
@@ -113,13 +113,13 @@ ExtraHubText.Name = "ExtraHubText"
 ExtraHubText.Parent = main
 ExtraHubText.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
 ExtraHubText.BorderColor3 = Color3.fromRGB(49, 49, 49)
-ExtraHubText.Position = UDim2.new(0, 8, 0, 8)
-ExtraHubText.Size = UDim2.new(0, 142, 0, 42)
+ExtraHubText.Size = UDim2.new(0, 147, 0, 50)
 ExtraHubText.Font = Enum.Font.SourceSansBold
 ExtraHubText.Text = "Extra Hub"
 ExtraHubText.TextColor3 = Color3.fromRGB(20, 255, 220)
 ExtraHubText.TextSize = 36.000
 ExtraHubText.TextWrapped = true
+ExtraHubText.BackgroundTransparency = 100
 
 close.Name = "close"
 close.Parent = main
@@ -134,4 +134,19 @@ close.TextSize = 34.000
 close.MouseButton1Down:connect(function()
 	main.Visible = false
 	openmain.Visible = true
+end)
+
+InfiniteYieldButton.Name = "InfiniteYieldButton"
+InfiniteYieldButton.Parent = main
+InfiniteYieldButton.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+InfiniteYieldButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteYieldButton.Position = UDim2.new(0.322896272, 0, 0.0294117648, 0)
+InfiniteYieldButton.Size = UDim2.new(0, 207, 0, 42)
+InfiniteYieldButton.Font = Enum.Font.SourceSansBold
+InfiniteYieldButton.Text = "Infinite Yield"
+InfiniteYieldButton.TextColor3 = Color3.fromRGB(251, 255, 6)
+InfiniteYieldButton.TextSize = 36.000
+InfiniteYieldButton.TextWrapped = true
+InfiniteYieldButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 end)
