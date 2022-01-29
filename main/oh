@@ -1,8 +1,6 @@
 -- Made By bruhther
 
 local Hub = Instance.new("ScreenGui")
-local openmain = Instance.new("Frame")
-local open = Instance.new("TextButton")
 local main = Instance.new("ImageLabel")
 local JailbreakButton = Instance.new("TextButton")
 local PSXButton = Instance.new("TextButton")
@@ -10,43 +8,36 @@ local DarkHubButton = Instance.new("TextButton")
 local BreakingPointButton = Instance.new("TextButton")
 local ExtraHubText = Instance.new("TextLabel")
 local InfiniteYieldButton = Instance.new("TextButton")
-local HeroHubButton = Instance.new("TextButton")
 local close = Instance.new("ImageButton")
-local XButton = Instance.new("TextLabel")
+local closeBorder = Instance.new("ImageLabel")
+local XText = Instance.new("TextLabel")
+local openmain = Instance.new("Frame")
+local open = Instance.new("TextButton")
+local openBorder = Instance.new("ImageLabel")
+local openText = Instance.new("TextLabel")
+local ScrollingExtra = Instance.new("ScrollingFrame")
+local HeroButton = Instance.new("TextButton")
+local FEButton = Instance.new("TextButton")
+local OwlButton = Instance.new("TextButton")
+local SolarisButton = Instance.new("TextButton")
+local EzButton = Instance.new("TextButton")
+local CryptonicHub = Instance.new("TextButton")
+local MoreButton = Instance.new("TextButton")
 
 --Properties:
 
+Hub.Archivable = false
 Hub.Name = "Hub"
 Hub.Parent = game.CoreGui
 Hub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-openmain.Name = "openmain"
-openmain.Parent = Hub
-openmain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-openmain.Position = UDim2.new(0.0839861482, 0, 0.040567372, 0)
-openmain.Size = UDim2.new(0, 37, 0, 36)
-
-open.Name = "open"
-open.Parent = openmain
-open.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-open.Size = UDim2.new(0, 37, 0, 36)
-open.Font = Enum.Font.SourceSansBold
-open.Text = "OPEN"
-open.TextColor3 = Color3.fromRGB(255, 255, 255)
-open.TextSize = 12.000
-open.MouseButton1Down:connect(function()
-	openmain.Visible = false
-	main.Visible = true
-end)
-
-main.Archivable = false
 main.Name = "main"
 main.Parent = Hub
 main.AnchorPoint = Vector2.new(0.5, 0.5)
 main.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
 main.BackgroundTransparency = 1.000
-main.Position = UDim2.new(0.676830411, 9, 0.446625739, 0)
-main.Size = UDim2.new(0, 511, 0, 273)
+main.Position = UDim2.new(0.722673595, 9, 0.320858955, 0)
+main.Size = UDim2.new(0, 511, 0, 272)
 main.Visible = false
 main.ZIndex = 2
 main.Image = "rbxassetid://3570695787"
@@ -118,8 +109,8 @@ ExtraHubText.Parent = main
 ExtraHubText.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
 ExtraHubText.BackgroundTransparency = 1.000
 ExtraHubText.BorderColor3 = Color3.fromRGB(49, 49, 49)
-ExtraHubText.Position = UDim2.new(0.0176125243, 0, 0, 0)
-ExtraHubText.Size = UDim2.new(0, 138, 0, 50)
+ExtraHubText.Position = UDim2.new(0.0156555772, 0, 0, 0)
+ExtraHubText.Size = UDim2.new(0, 143, 0, 56)
 ExtraHubText.Font = Enum.Font.SourceSansBold
 ExtraHubText.Text = "Extra Hub"
 ExtraHubText.TextColor3 = Color3.fromRGB(20, 255, 220)
@@ -141,49 +132,206 @@ InfiniteYieldButton.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 end)
 
-HeroHubButton.Name = "HeroHubButton"
-HeroHubButton.Parent = main
-HeroHubButton.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
-HeroHubButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
-HeroHubButton.Position = UDim2.new(0.322896272, 0, 0.183257937, 0)
-HeroHubButton.Size = UDim2.new(0, 207, 0, 31)
-HeroHubButton.Font = Enum.Font.SourceSansBold
-HeroHubButton.Text = "Hero Hub"
-HeroHubButton.TextColor3 = Color3.fromRGB(12, 255, 0)
-HeroHubButton.TextSize = 27.000
-HeroHubButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/bruhtherlol/dont-click/main/lol"))()
-	  
-end)
 
 close.Name = "close"
 close.Parent = main
-close.AnchorPoint = Vector2.new(0.5, 0.5)
-close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-close.BackgroundTransparency = 1.000
+close.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
 close.BorderSizePixel = 0
-close.Position = UDim2.new(0.910959005, 0, 0.120879121, 0)
-close.Size = UDim2.new(0, 91, 0, 66)
-close.Selected = true
-close.Image = "rbxassetid://3570695787"
+close.Position = UDim2.new(0.837573409, 0, 0.0294117648, 0)
+close.Size = UDim2.new(0, 83, 0, 71)
+close.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 close.ImageColor3 = Color3.fromRGB(49, 49, 49)
-close.ScaleType = Enum.ScaleType.Slice
-close.SliceCenter = Rect.new(100, 100, 100, 100)
-close.SliceScale = 0.120
 close.MouseButton1Down:connect(function()
 	main.Visible = false
 	openmain.Visible = true
 end)
 
-XButton.Name = "XButton"
-XButton.Parent = close
-XButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-XButton.BackgroundTransparency = 1.000
-XButton.BorderColor3 = Color3.fromRGB(49, 49, 49)
-XButton.Position = UDim2.new(0.285714298, 0, 0, 0)
-XButton.Size = UDim2.new(0, 65, 0, 49)
-XButton.Font = Enum.Font.SourceSansBold
-XButton.Text = "X"
-XButton.TextColor3 = Color3.fromRGB(255, 0, 0)
-XButton.TextSize = 33.000
-XButton.TextWrapped = true
+closeBorder.Name = "closeBorder"
+closeBorder.Parent = close
+closeBorder.AnchorPoint = Vector2.new(0.5, 0.5)
+closeBorder.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+closeBorder.BackgroundTransparency = 1.000
+closeBorder.Position = UDim2.new(0.427710831, 0, 0.443661958, 0)
+closeBorder.Size = UDim2.new(0.855421662, 24, 0.774648011, 24)
+closeBorder.Image = "rbxassetid://3570695787"
+closeBorder.ImageColor3 = Color3.fromRGB(49, 49, 49)
+closeBorder.ScaleType = Enum.ScaleType.Slice
+closeBorder.SliceCenter = Rect.new(100, 100, 100, 100)
+closeBorder.SliceScale = 0.120
+
+XText.Name = "XText"
+XText.Parent = close
+XText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+XText.BackgroundTransparency = 1.000
+XText.BorderColor3 = Color3.fromRGB(49, 49, 49)
+XText.Position = UDim2.new(0, 0, -0.112676054, 0)
+XText.Size = UDim2.new(0, 83, 0, 62)
+XText.Font = Enum.Font.SourceSansBold
+XText.Text = "X"
+XText.TextColor3 = Color3.fromRGB(255, 0, 0)
+XText.TextSize = 51.000
+XText.TextWrapped = true
+
+openmain.Name = "openmain"
+openmain.Parent = Hub
+openmain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+openmain.Position = UDim2.new(0.0839861482, 0, 0.0393403769, 0)
+openmain.Size = UDim2.new(0, 37, 0, 37)
+
+open.Name = "open"
+open.Parent = openmain
+open.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+open.BorderSizePixel = 0
+open.Size = UDim2.new(0, 37, 0, 36)
+open.Font = Enum.Font.SourceSansBold
+open.Text = "OPEN"
+open.TextColor3 = Color3.fromRGB(255, 255, 255)
+open.TextSize = 12.000
+open.MouseButton1Down:connect(function()
+	openmain.Visible = false
+	main.Visible = true
+end)
+
+openBorder.Name = "openBorder"
+openBorder.Parent = open
+openBorder.AnchorPoint = Vector2.new(0.5, 0.5)
+openBorder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+openBorder.BackgroundTransparency = 1.000
+openBorder.Position = UDim2.new(0.5, 0, 0.5, 0)
+openBorder.Size = UDim2.new(1, 24, 1, 24)
+openBorder.Image = "rbxassetid://3570695787"
+openBorder.ImageColor3 = Color3.fromRGB(49, 49, 49)
+openBorder.ScaleType = Enum.ScaleType.Slice
+openBorder.SliceCenter = Rect.new(100, 100, 100, 100)
+openBorder.SliceScale = 0.120
+
+openText.Name = "openText"
+openText.Parent = open
+openText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+openText.BackgroundTransparency = 1.000
+openText.Position = UDim2.new(-0.32432431, 0, -0.5, 0)
+openText.Size = UDim2.new(0, 61, 0, 66)
+openText.Font = Enum.Font.SourceSansBold
+openText.Text = "Open"
+openText.TextColor3 = Color3.fromRGB(255, 255, 255)
+openText.TextSize = 22.000
+
+ScrollingExtra.Name = "ScrollingExtra"
+ScrollingExtra.Parent = Hub
+ScrollingExtra.Active = true
+ScrollingExtra.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+ScrollingExtra.BorderColor3 = Color3.fromRGB(3, 255, 226)
+ScrollingExtra.Position = UDim2.new(0.520590544, 0, 0.57914114, 0)
+ScrollingExtra.Size = UDim2.new(0, 540, 0, 256)
+ScrollingExtra.Visible = false
+
+HeroButton.Name = "HeroButton"
+HeroButton.Parent = ScrollingExtra
+HeroButton.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+HeroButton.BorderColor3 = Color3.fromRGB(3, 255, 226)
+HeroButton.Position = UDim2.new(0.57407409, 0, 0.0184755251, 0)
+HeroButton.Size = UDim2.new(0, 200, 0, 54)
+HeroButton.Font = Enum.Font.SourceSansBold
+HeroButton.Text = "Hero Hub"
+HeroButton.TextColor3 = Color3.fromRGB(0, 255, 17)
+HeroButton.TextSize = 39.000
+HeroButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/bruhtherlol/dont-click/main/lol"))()
+	ScrollingExtra.Visible = false
+
+end)
+
+FEButton.Name = "FEButton"
+FEButton.Parent = ScrollingExtra
+FEButton.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+FEButton.BorderColor3 = Color3.fromRGB(3, 255, 226)
+FEButton.Position = UDim2.new(0.0462962985, 0, 0.0180458277, 0)
+FEButton.Size = UDim2.new(0, 200, 0, 54)
+FEButton.Font = Enum.Font.SourceSansBold
+FEButton.Text = "FE Walk On Walls"
+FEButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+FEButton.TextSize = 27.000
+FEButton.TextWrapped = true
+FEButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/5T7KsEWy"))()
+	ScrollingExtra.Visible = false
+
+end)
+
+OwlButton.Name = "OwlButton"
+OwlButton.Parent = ScrollingExtra
+OwlButton.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+OwlButton.BorderColor3 = Color3.fromRGB(3, 255, 226)
+OwlButton.Position = UDim2.new(0.0462962948, 0, 0.0766871199, 0)
+OwlButton.Size = UDim2.new(0, 200, 0, 50)
+OwlButton.Font = Enum.Font.SourceSansBold
+OwlButton.Text = "Owl Hub"
+OwlButton.TextColor3 = Color3.fromRGB(158, 108, 7)
+OwlButton.TextSize = 42.000
+OwlButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
+	ScrollingExtra.Visible = false
+
+end)
+
+
+SolarisButton.Name = "SolarisButton"
+SolarisButton.Parent = ScrollingExtra
+SolarisButton.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+SolarisButton.BorderColor3 = Color3.fromRGB(3, 255, 226)
+SolarisButton.Position = UDim2.new(0.57407409, 0, 0.0766871199, 0)
+SolarisButton.Size = UDim2.new(0, 200, 0, 50)
+SolarisButton.Font = Enum.Font.SourceSansBold
+SolarisButton.Text = "Solaris Hub"
+SolarisButton.TextColor3 = Color3.fromRGB(207, 207, 207)
+SolarisButton.TextSize = 35.000
+SolarisButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))
+	ScrollingExtra.Visible = false
+
+end)
+
+EzButton.Name = "EzButton"
+EzButton.Parent = ScrollingExtra
+EzButton.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+EzButton.BorderColor3 = Color3.fromRGB(3, 255, 226)
+EzButton.Position = UDim2.new(0.0462962948, 0, 0.137595862, 0)
+EzButton.Size = UDim2.new(0, 200, 0, 55)
+EzButton.Font = Enum.Font.SourceSansBold
+EzButton.Text = "Ez Hub"
+EzButton.TextColor3 = Color3.fromRGB(0, 255, 247)
+EzButton.TextSize = 44.000
+EzButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+	ScrollingExtra.Visible = false
+
+end)
+
+CryptonicHub.Name = "Cryptonic Hub"
+CryptonicHub.Parent = ScrollingExtra
+CryptonicHub.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+CryptonicHub.BorderColor3 = Color3.fromRGB(3, 255, 226)
+CryptonicHub.Position = UDim2.new(0.57407409, 0, 0.138036802, 0)
+CryptonicHub.Size = UDim2.new(0, 200, 0, 50)
+CryptonicHub.Font = Enum.Font.SourceSansBold
+CryptonicHub.Text = "Cryptonic Hub"
+CryptonicHub.TextColor3 = Color3.fromRGB(230, 255, 0)
+CryptonicHub.TextSize = 35.000
+CryptonicHub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua'))()
+	ScrollingExtra.Visible = false
+end)
+
+MoreButton.Name = "MoreButton"
+MoreButton.Parent = Hub
+MoreButton.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+MoreButton.BorderColor3 = Color3.fromRGB(3, 255, 226)
+MoreButton.Position = UDim2.new(0.0108780107, 0, 0.914110422, 0)
+MoreButton.Size = UDim2.new(0, 200, 0, 50)
+MoreButton.Font = Enum.Font.SourceSansBold
+MoreButton.Text = "More Scripts"
+MoreButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+MoreButton.TextSize = 22.000
+MoreButton.MouseButton1Down:connect(function()
+	ScrollingExtra.Visible = true
+end)
