@@ -224,7 +224,6 @@ ScrollingExtra.BorderColor3 = Color3.fromRGB(3, 255, 226)
 ScrollingExtra.Position = UDim2.new(0.520590544, 0, 0.57914114, 0)
 ScrollingExtra.Size = UDim2.new(0, 540, 0, 256)
 ScrollingExtra.Visible = false
-ScrollIngExtra.Draggable = true
 
 HeroButton.Name = "HeroButton"
 HeroButton.Parent = ScrollingExtra
