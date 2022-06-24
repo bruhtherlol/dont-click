@@ -1,0 +1,135 @@
+-- Doom
+-- Version: 1.0
+
+-- You're Doomed.
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local DoomLogo = Instance.new("TextLabel")
+local Projectmeow = Instance.new("TextButton")
+local InfiniteYield = Instance.new("TextButton")
+local DarkHub = Instance.new("TextButton")
+local ExtraHub = Instance.new("TextButton")
+local CloseButton = Instance.new("TextButton")
+local openmain = Instance.new("Frame")
+local OpenButton = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.Active = true
+main.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+main.BorderSizePixel = 0
+main.Position = UDim2.new(0.35158056, 0, 0.0944785178, 0)
+main.Size = UDim2.new(0, 535, 0, 283)
+main.Visible = false
+main.Draggable = true
+
+DoomLogo.Name = "DoomLogo"
+DoomLogo.Parent = main
+DoomLogo.BackgroundColor3 = Color3.fromRGB(116, 0, 0)
+DoomLogo.BackgroundTransparency = 1.000
+DoomLogo.Position = UDim2.new(-0.0506329127, 0, 0.0299003329, 0)
+DoomLogo.Size = UDim2.new(0, 200, 0, 50)
+DoomLogo.Font = Enum.Font.SpecialElite
+DoomLogo.Text = "Doom"
+DoomLogo.TextColor3 = Color3.fromRGB(182, 0, 0)
+DoomLogo.TextSize = 33.000
+
+Projectmeow.Name = "Projectmeow"
+Projectmeow.Parent = main
+Projectmeow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Projectmeow.BackgroundTransparency = 1.000
+Projectmeow.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Projectmeow.Position = UDim2.new(0.104517408, 0, 0.272425234, 0)
+Projectmeow.Size = UDim2.new(0, 200, 0, 50)
+Projectmeow.Font = Enum.Font.SourceSansBold
+Projectmeow.Text = "Project Meow"
+Projectmeow.TextColor3 = Color3.fromRGB(56, 114, 223)
+Projectmeow.TextSize = 27.000
+Projectmeow.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet"https://rawscripts.net/raw/Project-Meow_421")()
+end)
+
+InfiniteYield.Name = "InfiniteYield"
+InfiniteYield.Parent = main
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteYield.BackgroundTransparency = 1.000
+InfiniteYield.Position = UDim2.new(0.518865705, 0, 0.272425234, 0)
+InfiniteYield.Size = UDim2.new(0, 200, 0, 50)
+InfiniteYield.Font = Enum.Font.SourceSansBold
+InfiniteYield.Text = "Infinite Yield"
+InfiniteYield.TextColor3 = Color3.fromRGB(247, 210, 76)
+InfiniteYield.TextSize = 27.000
+InfiniteYield.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+DarkHub.Name = "Dark Hub"
+DarkHub.Parent = main
+DarkHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DarkHub.BackgroundTransparency = 1.000
+DarkHub.BorderColor3 = Color3.fromRGB(27, 42, 53)
+DarkHub.Position = UDim2.new(0.104672894, 0, 0.565371037, 0)
+DarkHub.Size = UDim2.new(0, 200, 0, 63)
+DarkHub.Font = Enum.Font.SourceSansBold
+DarkHub.Text = "Dark Hub"
+DarkHub.TextColor3 = Color3.fromRGB(206, 206, 206)
+DarkHub.TextSize = 27.000
+DarkHub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+end)
+
+ExtraHub.Name = "Extra Hub"
+ExtraHub.Parent = main
+ExtraHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExtraHub.BackgroundTransparency = 1.000
+ExtraHub.BorderColor3 = Color3.fromRGB(27, 42, 53)
+ExtraHub.Position = UDim2.new(0.519626141, 0, 0.565371037, 0)
+ExtraHub.Size = UDim2.new(0, 200, 0, 63)
+ExtraHub.Font = Enum.Font.SourceSansBold
+ExtraHub.Text = "Extra Hub"
+ExtraHub.TextColor3 = Color3.fromRGB(0, 255, 255)
+ExtraHub.TextSize = 27.000
+ExtraHub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/bruhtherlol/dont-click/main/main/oh"))()
+end)
+
+CloseButton.Parent = main
+CloseButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.BackgroundTransparency = 1.000
+CloseButton.Position = UDim2.new(0.892697453, 0, 0, 0)
+CloseButton.Size = UDim2.new(0, 57, 0, 50)
+CloseButton.Font = Enum.Font.SourceSans
+CloseButton.Text = "x"
+CloseButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+CloseButton.TextSize = 44.000
+CloseButton.MouseButton1Down:connect(function()
+	main.visible = false
+	openmain.visible = true
+end)
+
+openmain.Name = "openmain"
+openmain.Parent = ScreenGui
+openmain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+openmain.BackgroundTransparency = 1.000
+openmain.Position = UDim2.new(0.0254433304, 0, 0.0110429451, 0)
+openmain.Size = UDim2.new(0, 68, 0, 68)
+openmain.active = true
+openmain.Draggable = true
+
+OpenButton.Parent = openmain
+OpenButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenButton.BackgroundTransparency = 1.000
+OpenButton.Size = UDim2.new(0, 68, 0, 68)
+OpenButton.Font = Enum.Font.SpecialElite
+OpenButton.Text = "Open"
+OpenButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+OpenButton.TextSize = 25.000
+OpenButton.MouseButton1Down:connect(function()
+	openmain.visible = false
+	main.Visible = true
+end)
