@@ -10,10 +10,6 @@ local Projectmeow = Instance.new("TextButton")
 local InfiniteYield = Instance.new("TextButton")
 local DarkHub = Instance.new("TextButton")
 local ExtraHub = Instance.new("TextButton")
-local CloseButton = Instance.new("TextButton")
-local openmain = Instance.new("Frame")
-local OpenButton = Instance.new("TextButton")
-
 --Properties:
 
 ScreenGui.Parent = game.CoreGui
@@ -98,41 +94,6 @@ ExtraHub.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/bruhtherlol/dont-click/main/main/oh"))()
 end)
 
-CloseButton.Parent = main
-CloseButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CloseButton.BackgroundTransparency = 1.000
-CloseButton.Position = UDim2.new(0.892697453, 0, 0, 0)
-CloseButton.Size = UDim2.new(0, 57, 0, 50)
-CloseButton.Font = Enum.Font.SourceSans
-CloseButton.Text = "x"
-CloseButton.TextColor3 = Color3.fromRGB(255, 0, 0)
-CloseButton.TextSize = 44.000
-CloseButton.Active = true
-CloseButton.MouseButton1Down:connect(function()
-	main.visible = false
-	openmain.visible = true
-end)
 
-openmain.Name = "openmain"
-openmain.Parent = ScreenGui
-openmain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-openmain.BackgroundTransparency = 1.000
-openmain.Position = UDim2.new(0.0254433304, 0, 0.0110429451, 0)
-openmain.Size = UDim2.new(0, 68, 0, 68)
-openmain.active = true
-openmain.Draggable = true
-openmain.visible = false
 
-OpenButton.Parent = openmain
-OpenButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-OpenButton.BackgroundTransparency = 0
-OpenButton.Size = UDim2.new(0, 68, 0, 68)
-OpenButton.Font = Enum.Font.SpecialElite
-OpenButton.Text = "Open"
-OpenButton.TextColor3 = Color3.fromRGB(255, 0, 0)
-OpenButton.TextSize = 25.000
-OpenButton.active = true
-OpenButton.MouseButton1Down:connect(function()
-	openmain.visible = false
-	main.Visible = true
-end)
+
