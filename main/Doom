@@ -107,6 +107,7 @@ CloseButton.Font = Enum.Font.SourceSans
 CloseButton.Text = "x"
 CloseButton.TextColor3 = Color3.fromRGB(255, 0, 0)
 CloseButton.TextSize = 44.000
+CloseButton.Active = true
 CloseButton.MouseButton1Down:connect(function()
 	main.visible = false
 	openmain.visible = true
@@ -124,12 +125,13 @@ openmain.visible = false
 
 OpenButton.Parent = openmain
 OpenButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-OpenButton.BackgroundTransparency = 1.000
+OpenButton.BackgroundTransparency = 0
 OpenButton.Size = UDim2.new(0, 68, 0, 68)
 OpenButton.Font = Enum.Font.SpecialElite
 OpenButton.Text = "Open"
 OpenButton.TextColor3 = Color3.fromRGB(255, 0, 0)
 OpenButton.TextSize = 25.000
+OpenButton.active = true
 OpenButton.MouseButton1Down:connect(function()
 	openmain.visible = false
 	main.Visible = true
