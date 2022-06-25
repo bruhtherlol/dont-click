@@ -25,7 +25,7 @@ main.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 main.BorderSizePixel = 0
 main.Position = UDim2.new(0.35158056, 0, 0.0944785178, 0)
 main.Size = UDim2.new(0, 535, 0, 283)
-main.Visible = false
+main.Visible = true
 main.Draggable = true
 
 DoomLogo.Name = "DoomLogo"
@@ -120,6 +120,7 @@ openmain.Position = UDim2.new(0.0254433304, 0, 0.0110429451, 0)
 openmain.Size = UDim2.new(0, 68, 0, 68)
 openmain.active = true
 openmain.Draggable = true
+openmain.visible = false
 
 OpenButton.Parent = openmain
 OpenButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
