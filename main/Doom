@@ -13,6 +13,7 @@ local InfiniteYield = Instance.new("TextButton")
 local DarkHub = Instance.new("TextButton")
 local ExtraHub = Instance.new("TextButton")
 local EclipseHub = Instance.new("TextButton")
+local credits = Instance.new("TextLabel")
 
 --Properties:
 
@@ -126,3 +127,14 @@ EclipseHub.MouseButton1Down:connect(function()
 
 		
 end)
+
+credits.Name = "credits"
+credits.Parent = main
+credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+credits.BackgroundTransparency = 1.000
+credits.Position = UDim2.new(0.669798732, 0, 0.820994675, 0)
+credits.Size = UDim2.new(0, 200, 0, 50)
+credits.Font = Enum.Font.SourceSans
+credits.Text = "made by bruhther#7399"
+credits.TextColor3 = Color3.fromRGB(255, 0, 0)
+credits.TextSize = 14.000
