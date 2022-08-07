@@ -14,6 +14,9 @@ local DarkHub = Instance.new("TextButton")
 local ExtraHub = Instance.new("TextButton")
 local EclipseHub = Instance.new("TextButton")
 local credits = Instance.new("TextLabel")
+local Time = Instance.new("TextLabel")
+local Date = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
 
 --Properties:
 
@@ -132,9 +135,81 @@ credits.Name = "credits"
 credits.Parent = main
 credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 credits.BackgroundTransparency = 1.000
-credits.Position = UDim2.new(0.669798732, 0, 0.820994675, 0)
+credits.Position = UDim2.new(0.65858382, 0, 0.022408098, 0)
 credits.Size = UDim2.new(0, 200, 0, 50)
-credits.Font = Enum.Font.SourceSans
+credits.Font = Enum.Font.GothamBold
 credits.Text = "made by bruhther#7399"
 credits.TextColor3 = Color3.fromRGB(255, 0, 0)
 credits.TextSize = 14.000
+
+Time.Name = "Time"
+Time.Parent = main
+Time.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Time.BackgroundTransparency = 1.000
+Time.Position = UDim2.new(-0.0691588819, 0, 0.795053005, 0)
+Time.Size = UDim2.new(0, 200, 0, 50)
+Time.Font = Enum.Font.GothamBold
+Time.Text = "01:00 PM"
+Time.TextColor3 = Color3.fromRGB(255, 0, 0)
+Time.TextSize = 14.000
+
+Date.Name = "Date"
+Date.Parent = main
+Date.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Date.BackgroundTransparency = 1.000
+Date.Position = UDim2.new(0.657943904, 0, 0.795053065, 0)
+Date.Size = UDim2.new(0, 200, 0, 50)
+Date.Font = Enum.Font.GothamBold
+Date.Text = "Sunday, August 07"
+Date.TextColor3 = Color3.fromRGB(255, 0, 0)
+Date.TextSize = 14.000
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.304672897, 0, 0.738515913, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "Greetings Master."
+TextLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel.TextSize = 23.000
+
+-- Scripts:
+
+local function CHQM_fake_script() -- Time.LocalScript 
+	local script = Instance.new('LocalScript', Time)
+
+	while true do
+		local TimeInUnix = os.time()
+		local Date = script.Parent
+	
+		local stringToFormat = "%I:%M %p"
+	
+		local result = os.date(stringToFormat, TimeInUnix)
+	
+		Date.Text = result
+	
+		wait(1)
+	
+	end
+	
+end
+coroutine.wrap(CHQM_fake_script)()
+local function KKWWIDF_fake_script() -- Date.LocalScript 
+	local script = Instance.new('LocalScript', Date)
+
+	while true do
+		local TimeInUnix = os.time()
+		local Date = script.Parent
+	
+		local stringToFormat = "%A, %B %d"
+	
+		local result = os.date(stringToFormat, TimeInUnix)
+	
+		Date.Text = result
+	
+		wait(1)
+	
+	end
+end
+coroutine.wrap(KKWWIDF_fake_script)()
