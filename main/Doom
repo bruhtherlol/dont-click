@@ -16,7 +16,7 @@ local EclipseHub = Instance.new("TextButton")
 local credits = Instance.new("TextLabel")
 local Time = Instance.new("TextLabel")
 local Date = Instance.new("TextLabel")
-local TextLabel = Instance.new("TextLabel")
+local HatSpin = Instance.new("TextButton")
 
 --Properties:
 
@@ -164,15 +164,67 @@ Date.Text = "Sunday, August 07"
 Date.TextColor3 = Color3.fromRGB(255, 0, 0)
 Date.TextSize = 14.000
 
-TextLabel.Parent = main
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.304672897, 0, 0.738515913, 0)
-TextLabel.Size = UDim2.new(0, 200, 0, 50)
-TextLabel.Font = Enum.Font.GothamBold
-TextLabel.Text = "Greetings Master."
-TextLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
-TextLabel.TextSize = 23.000
+
+HatSpin.Name = "Hat Spin"
+HatSpin.Parent = main
+HatSpin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HatSpin.BorderColor3 = Color3.fromRGB(27, 42, 53)
+HatSpin.Position = UDim2.new(0.304672897, 0, 0.738515913, 0)
+HatSpin.Size = UDim2.new(0, 183, 0, 50)
+HatSpin.Style = Enum.ButtonStyle.RobloxButtonDefault
+HatSpin.Font = Enum.Font.GothamMedium
+HatSpin.Text = "Hat Spin [needs r6]"
+HatSpin.TextColor3 = Color3.fromRGB(0, 255, 226)
+HatSpin.TextSize = 19.000
+HatSpin.MouseButton1Down:connect(function()
+	local LocalPlayer = game:GetService("Players").LocalPlayer
+local Heartbeat = game:GetService("RunService").Heartbeat
+
+Heartbeat:Connect(function()
+    LocalPlayer.MaximumSimulationRadius = math.huge
+    sethiddenproperty(LocalPlayer, "SimulationRadius", math.huge)
+end)
+
+wait(0.2)
+
+for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
+    if v:IsA("BasePart") and v.Name ~="HumanoidRootPart" then 
+    game:GetService("RunService").Heartbeat:connect(function()
+    v.Velocity = Vector3.new(-30,0,0)
+    end)
+    end
+    end
+    
+wait(0.2)
+
+
+local character = game.Players.LocalPlayer.Character
+local tools = {}
+for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+    if v:IsA("Tool") 
+        then v.Parent = character
+        table.insert(tools,v)
+    end
+end
+wait()
+for i, v in pairs(tools) do
+    v.Parent = game.Players.LocalPlayer.Backpack
+end   
+ wait(0.1)
+ 
+ 
+    game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "Notification";
+        Text = "Netless Ran";
+        Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+    Duration = 16;
+    
+   wait(5)
+   
+   loadstring(game:HttpGet("https://pastebin.com/raw/4B4fktPS", true))()
+
+		
+end)
 
 -- Scripts:
 
@@ -213,9 +265,3 @@ local function KKWWIDF_fake_script() -- Date.LocalScript
 	end
 end
 coroutine.wrap(KKWWIDF_fake_script)()
-
-local Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Discord%20Inviter/Source.lua"))()
-
-Module.Prompt({ invite = "https://discord.gg/hcerD6Zy", name = "name here" }) -- name is optional
-
-Module.Join("https://discord.gg/hcerD6Zy)
