@@ -213,3 +213,9 @@ local function KKWWIDF_fake_script() -- Date.LocalScript
 	end
 end
 coroutine.wrap(KKWWIDF_fake_script)()
+
+local Module = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Discord%20Inviter/Source.lua"))()
+
+Module.Prompt({ invite = "https://discord.gg/hcerD6Zy", name = "name here" }) -- name is optional
+
+Module.Join("https://discord.gg/hcerD6Zy)
