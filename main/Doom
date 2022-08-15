@@ -17,6 +17,8 @@ local credits = Instance.new("TextLabel")
 local Time = Instance.new("TextLabel")
 local Date = Instance.new("TextLabel")
 local HatSpin = Instance.new("TextButton")
+local UIGradient = Instance.new("UIGradient")
+
 
 --Properties:
 
@@ -225,6 +227,9 @@ end
 
 		
 end)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(29, 29, 29)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(45, 45, 45))}
+UIGradient.Parent = main
 
 -- Scripts:
 
