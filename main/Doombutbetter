@@ -1,5 +1,5 @@
--- Doom.
--- Version: 3.0
+-- Doom
+-- v.3.0
 
 -- Instances:
 
@@ -16,6 +16,7 @@ local VGHub = Instance.new("TextButton")
 local Time = Instance.new("TextLabel")
 local Date = Instance.new("TextLabel")
 local OldDoom = Instance.new("TextButton")
+local credits = Instance.new("TextLabel")
 
 --Properties:
 
@@ -27,10 +28,11 @@ DoomFrame.Name = "DoomFrame"
 DoomFrame.Parent = Doom
 DoomFrame.Active = true
 DoomFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DoomFrame.Position = UDim2.new(0.34467119, 0, 0.227662191, 0)
+DoomFrame.Position = UDim2.new(0.345905006, 0, 0.235006124, 0)
 DoomFrame.Size = UDim2.new(0, 535, 0, 283)
-DoomFrame.Visible = true
 DoomFrame.Draggable = true
+DoomFrame.Visible = true
+
 
 UICorner.Parent = DoomFrame
 
@@ -42,8 +44,8 @@ Title.Parent = DoomFrame
 Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Title.BackgroundTransparency = 1.000
 Title.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Title.Position = UDim2.new(0.12931034, 0, 0.0869565234, 0)
-Title.Size = UDim2.new(0, 0, 0, 20)
+Title.Position = UDim2.new(0.0900579989, 0, 0.0834229812, 0)
+Title.Size = UDim2.new(0, 22, 0, 20)
 Title.Font = Enum.Font.SpecialElite
 Title.Text = "Doom"
 Title.TextColor3 = Color3.fromRGB(255, 0, 0)
@@ -53,7 +55,7 @@ InfiniteYield.Name = "InfiniteYield"
 InfiniteYield.Parent = DoomFrame
 InfiniteYield.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 InfiniteYield.BorderColor3 = Color3.fromRGB(255, 0, 0)
-InfiniteYield.Position = UDim2.new(0.284482747, 0, 0.0276679844, 0)
+InfiniteYield.Position = UDim2.new(0.312520117, 0, 0.0312015526, 0)
 InfiniteYield.Size = UDim2.new(0, 200, 0, 50)
 InfiniteYield.Style = Enum.ButtonStyle.RobloxButtonDefault
 InfiniteYield.Font = Enum.Font.GothamBlack
@@ -68,7 +70,7 @@ end)
 DarkHub.Name = "DarkHub"
 DarkHub.Parent = DoomFrame
 DarkHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DarkHub.Position = UDim2.new(0.0474137925, 0, 0.62845856, 0)
+DarkHub.Position = UDim2.new(0.101619393, 0, 0.624925017, 0)
 DarkHub.Size = UDim2.new(0, 200, 0, 50)
 DarkHub.Style = Enum.ButtonStyle.RobloxButtonDefault
 DarkHub.Font = Enum.Font.GothamBlack
@@ -83,7 +85,7 @@ end)
 ExtraHub.Name = "ExtraHub"
 ExtraHub.Parent = DoomFrame
 ExtraHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ExtraHub.Position = UDim2.new(0.521551669, 0, 0.62845856, 0)
+ExtraHub.Position = UDim2.new(0.523420811, 0, 0.624925017, 0)
 ExtraHub.Size = UDim2.new(0, 200, 0, 50)
 ExtraHub.Style = Enum.ButtonStyle.RobloxButtonDefault
 ExtraHub.Font = Enum.Font.GothamBlack
@@ -97,7 +99,7 @@ end)
 DomainX.Name = "DomainX"
 DomainX.Parent = DoomFrame
 DomainX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DomainX.Position = UDim2.new(0.521551669, 0, 0.324110657, 0)
+DomainX.Position = UDim2.new(0.523420811, 0, 0.324110657, 0)
 DomainX.Size = UDim2.new(0, 200, 0, 50)
 DomainX.Style = Enum.ButtonStyle.RobloxButtonDefault
 DomainX.Font = Enum.Font.GothamBlack
@@ -113,7 +115,7 @@ end)
 VGHub.Name = "VGHub"
 VGHub.Parent = DoomFrame
 VGHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-VGHub.Position = UDim2.new(0.0474137925, 0, 0.324110657, 0)
+VGHub.Position = UDim2.new(0.1016194, 0, 0.324110657, 0)
 VGHub.Size = UDim2.new(0, 200, 0, 50)
 VGHub.Style = Enum.ButtonStyle.RobloxButtonDefault
 VGHub.Font = Enum.Font.GothamBlack
@@ -122,14 +124,14 @@ VGHub.TextColor3 = Color3.fromRGB(0, 85, 127)
 VGHub.TextSize = 32.000
 VGHub.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub',true))()
-	
-	end)
+
+end)
 
 Time.Name = "Time"
 Time.Parent = DoomFrame
 Time.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Time.BackgroundTransparency = 1.000
-Time.Position = UDim2.new(0.808701098, 0, -0.00231539411, 0)
+Time.Position = UDim2.new(0.834869325, 0, -0.00231539411, 0)
 Time.Size = UDim2.new(0, 88, 0, 50)
 Time.Font = Enum.Font.GothamBlack
 Time.Text = "1:00 PM"
@@ -140,7 +142,7 @@ Date.Name = "Date"
 Date.Parent = DoomFrame
 Date.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Date.BackgroundTransparency = 1.000
-Date.Position = UDim2.new(0.284482747, 0, 0.791666687, 0)
+Date.Position = UDim2.new(0.312520117, 0, 0.738663137, 0)
 Date.Size = UDim2.new(0, 200, 0, 50)
 Date.Font = Enum.Font.GothamBlack
 Date.Text = "August 1 Sunday"
@@ -151,11 +153,11 @@ OldDoom.Name = "OldDoom"
 OldDoom.Parent = DoomFrame
 OldDoom.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 OldDoom.BackgroundTransparency = 1.000
-OldDoom.Position = UDim2.new(0, 0, 0.836791873, 0)
+OldDoom.Position = UDim2.new(0.0224299058, 0, 0.840325415, 0)
 OldDoom.Size = UDim2.new(0, 36, 0, 39)
 OldDoom.Font = Enum.Font.SourceSans
-OldDoom.Text = ""
-OldDoom.TextColor3 = Color3.fromRGB(0, 0, 0)
+OldDoom.Text = "OldDoom"
+OldDoom.TextColor3 = Color3.fromRGB(255, 0, 0)
 OldDoom.TextSize = 14.000
 OldDoom.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/bruhtherlol/dont-click/main/main/Doom',true))()
@@ -163,9 +165,20 @@ OldDoom.MouseButton1Down:connect(function()
 
 end)
 
+credits.Parent = DoomFrame
+credits.Active = true
+credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+credits.BackgroundTransparency = 1.000
+credits.Position = UDim2.new(0.360747695, 0, 0.204947054, 0)
+credits.Size = UDim2.new(0, 149, 0, 50)
+credits.Font = Enum.Font.GothamMedium
+credits.Text = "made by bruhther#7399"
+credits.TextColor3 = Color3.fromRGB(255, 0, 0)
+credits.TextSize = 14.000
+
 -- Scripts:
 
-local function YXSXFKM_fake_script() -- Time.SetTime 
+local function SOMJK_fake_script() -- Time.SetTime 
 	local script = Instance.new('LocalScript', Time)
 
 	while true do
@@ -182,8 +195,8 @@ local function YXSXFKM_fake_script() -- Time.SetTime
 	
 	end
 end
-coroutine.wrap(YXSXFKM_fake_script)()
-local function VDWDOQ_fake_script() -- Date.SetDate 
+coroutine.wrap(SOMJK_fake_script)()
+local function OAUESZC_fake_script() -- Date.SetDate 
 	local script = Instance.new('LocalScript', Date)
 
 	while true do
@@ -202,4 +215,4 @@ local function VDWDOQ_fake_script() -- Date.SetDate
 	
 	
 end
-coroutine.wrap(VDWDOQ_fake_script)()
+coroutine.wrap(OAUESZC_fake_script)()
