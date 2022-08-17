@@ -28,7 +28,7 @@ DoomFrame.Parent = Doom
 DoomFrame.Active = true
 DoomFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 DoomFrame.Position = UDim2.new(0.34467119, 0, 0.227662191, 0)
-DoomFrame.Size = UDim2.new(0, 464, 0, 240)
+DoomFrame.Size = UDim2.new(0, 535, 0, 283)
 DoomFrame.Visible = true
 DoomFrame.Draggable = true
 
