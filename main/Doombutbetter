@@ -1,0 +1,205 @@
+-- Doom.
+-- Version: 3.0
+
+-- Instances:
+
+local Doom = Instance.new("ScreenGui")
+local DoomFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local Title = Instance.new("TextLabel")
+local InfiniteYield = Instance.new("TextButton")
+local DarkHub = Instance.new("TextButton")
+local ExtraHub = Instance.new("TextButton")
+local DomainX = Instance.new("TextButton")
+local VGHub = Instance.new("TextButton")
+local Time = Instance.new("TextLabel")
+local Date = Instance.new("TextLabel")
+local OldDoom = Instance.new("TextButton")
+
+--Properties:
+
+Doom.Name = "Doom"
+Doom.Parent = game.CoreGui
+Doom.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+DoomFrame.Name = "DoomFrame"
+DoomFrame.Parent = Doom
+DoomFrame.Active = true
+DoomFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DoomFrame.Position = UDim2.new(0.34467119, 0, 0.227662191, 0)
+DoomFrame.Size = UDim2.new(0, 464, 0, 240)
+DoomFrame.Visible = true
+DoomFrame.Draggable = true
+
+UICorner.Parent = DoomFrame
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(35, 35, 35)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(56, 56, 56))}
+UIGradient.Parent = DoomFrame
+
+Title.Name = "Title"
+Title.Parent = DoomFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title.Position = UDim2.new(0.12931034, 0, 0.0869565234, 0)
+Title.Size = UDim2.new(0, 0, 0, 20)
+Title.Font = Enum.Font.SpecialElite
+Title.Text = "Doom"
+Title.TextColor3 = Color3.fromRGB(255, 0, 0)
+Title.TextSize = 33.000
+
+InfiniteYield.Name = "InfiniteYield"
+InfiniteYield.Parent = DoomFrame
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+InfiniteYield.BorderColor3 = Color3.fromRGB(255, 0, 0)
+InfiniteYield.Position = UDim2.new(0.284482747, 0, 0.0276679844, 0)
+InfiniteYield.Size = UDim2.new(0, 200, 0, 50)
+InfiniteYield.Style = Enum.ButtonStyle.RobloxButtonDefault
+InfiniteYield.Font = Enum.Font.GothamBlack
+InfiniteYield.Text = "Infinite Yield"
+InfiniteYield.TextColor3 = Color3.fromRGB(255, 183, 0)
+InfiniteYield.TextSize = 25.000
+InfiniteYield.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+InfiniteYield.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+DarkHub.Name = "DarkHub"
+DarkHub.Parent = DoomFrame
+DarkHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DarkHub.Position = UDim2.new(0.0474137925, 0, 0.62845856, 0)
+DarkHub.Size = UDim2.new(0, 200, 0, 50)
+DarkHub.Style = Enum.ButtonStyle.RobloxButtonDefault
+DarkHub.Font = Enum.Font.GothamBlack
+DarkHub.Text = "Dark Hub"
+DarkHub.TextColor3 = Color3.fromRGB(71, 71, 71)
+DarkHub.TextSize = 24.000
+DarkHub.TextWrapped = true
+DarkHub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+end)
+
+ExtraHub.Name = "ExtraHub"
+ExtraHub.Parent = DoomFrame
+ExtraHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExtraHub.Position = UDim2.new(0.521551669, 0, 0.62845856, 0)
+ExtraHub.Size = UDim2.new(0, 200, 0, 50)
+ExtraHub.Style = Enum.ButtonStyle.RobloxButtonDefault
+ExtraHub.Font = Enum.Font.GothamBlack
+ExtraHub.Text = "Extra Hub"
+ExtraHub.TextColor3 = Color3.fromRGB(0, 255, 127)
+ExtraHub.TextSize = 25.000
+ExtraHub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/bruhtherlol/dont-click/main/main/oh'))()
+end)
+
+DomainX.Name = "DomainX"
+DomainX.Parent = DoomFrame
+DomainX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DomainX.Position = UDim2.new(0.521551669, 0, 0.324110657, 0)
+DomainX.Size = UDim2.new(0, 200, 0, 50)
+DomainX.Style = Enum.ButtonStyle.RobloxButtonDefault
+DomainX.Font = Enum.Font.GothamBlack
+DomainX.Text = "DomainX"
+DomainX.TextColor3 = Color3.fromRGB(88, 91, 255)
+DomainX.TextSize = 25.000
+DomainX.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
+
+
+end)
+
+VGHub.Name = "VGHub"
+VGHub.Parent = DoomFrame
+VGHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VGHub.Position = UDim2.new(0.0474137925, 0, 0.324110657, 0)
+VGHub.Size = UDim2.new(0, 200, 0, 50)
+VGHub.Style = Enum.ButtonStyle.RobloxButtonDefault
+VGHub.Font = Enum.Font.GothamBlack
+VGHub.Text = "V.G Hub"
+VGHub.TextColor3 = Color3.fromRGB(0, 85, 127)
+VGHub.TextSize = 32.000
+VGHub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub',true))()
+	
+	end)
+
+Time.Name = "Time"
+Time.Parent = DoomFrame
+Time.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Time.BackgroundTransparency = 1.000
+Time.Position = UDim2.new(0.808701098, 0, -0.00231539411, 0)
+Time.Size = UDim2.new(0, 88, 0, 50)
+Time.Font = Enum.Font.GothamBlack
+Time.Text = "1:00 PM"
+Time.TextColor3 = Color3.fromRGB(255, 0, 0)
+Time.TextSize = 18.000
+
+Date.Name = "Date"
+Date.Parent = DoomFrame
+Date.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Date.BackgroundTransparency = 1.000
+Date.Position = UDim2.new(0.284482747, 0, 0.791666687, 0)
+Date.Size = UDim2.new(0, 200, 0, 50)
+Date.Font = Enum.Font.GothamBlack
+Date.Text = "August 1 Sunday"
+Date.TextColor3 = Color3.fromRGB(255, 0, 0)
+Date.TextSize = 14.000
+
+OldDoom.Name = "OldDoom"
+OldDoom.Parent = DoomFrame
+OldDoom.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OldDoom.BackgroundTransparency = 1.000
+OldDoom.Position = UDim2.new(0, 0, 0.836791873, 0)
+OldDoom.Size = UDim2.new(0, 36, 0, 39)
+OldDoom.Font = Enum.Font.SourceSans
+OldDoom.Text = ""
+OldDoom.TextColor3 = Color3.fromRGB(0, 0, 0)
+OldDoom.TextSize = 14.000
+OldDoom.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/bruhtherlol/dont-click/main/main/Doom',true))()
+
+
+end)
+
+-- Scripts:
+
+local function YXSXFKM_fake_script() -- Time.SetTime 
+	local script = Instance.new('LocalScript', Time)
+
+	while true do
+		local TimeInUnix = os.time()
+		local Date = script.Parent
+	
+		local stringToFormat = "%I:%M %p"
+	
+		local result = os.date(stringToFormat, TimeInUnix)
+	
+		Date.Text = result
+	
+		wait(1)
+	
+	end
+end
+coroutine.wrap(YXSXFKM_fake_script)()
+local function VDWDOQ_fake_script() -- Date.SetDate 
+	local script = Instance.new('LocalScript', Date)
+
+	while true do
+		local TimeInUnix = os.time()
+		local Date = script.Parent
+	
+		local stringToFormat = "%A, %B %d"
+	
+		local result = os.date(stringToFormat, TimeInUnix)
+	
+		Date.Text = result
+	
+		wait(1)
+	
+	end
+	
+	
+end
+coroutine.wrap(VDWDOQ_fake_script)()
