@@ -36,8 +36,9 @@ DoomFrame.Visible = true
 
 UICorner.Parent = DoomFrame
 
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(35, 35, 35)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(56, 56, 56))}
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(39, 0, 0)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(71, 46, 7)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(44, 83, 100))}
 UIGradient.Parent = DoomFrame
+UIGradient.Rotation = 8
 
 Title.Name = "Title"
 Title.Parent = DoomFrame
