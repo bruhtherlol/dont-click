@@ -33,7 +33,7 @@ DoomFrame.Size = UDim2.new(0, 535, 0, 283)
 DoomFrame.Draggable = true
 DoomFrame.Visible = true
 
-
+UICorner.CornerRadius = UDim.new(0, 13)
 UICorner.Parent = DoomFrame
 
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(39, 0, 0)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(71, 46, 7)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(44, 83, 100))}
