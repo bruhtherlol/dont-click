@@ -157,11 +157,11 @@ OldDoom.BackgroundTransparency = 1.000
 OldDoom.Position = UDim2.new(0.0224299058, 0, 0.840325415, 0)
 OldDoom.Size = UDim2.new(0, 36, 0, 39)
 OldDoom.Font = Enum.Font.SourceSans
-OldDoom.Text = "OldDoom"
+OldDoom.Text = "HS"
 OldDoom.TextColor3 = Color3.fromRGB(255, 0, 0)
 OldDoom.TextSize = 14.000
 OldDoom.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/bruhtherlol/dont-click/main/main/Doom',true))()
+	loadstring(game:HttpGet('https://pastebin.com/raw/NQzynGP6'))()
 
 
 end)
