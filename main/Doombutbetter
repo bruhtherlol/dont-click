@@ -212,7 +212,7 @@ end
     
     
     
-    wait(5)
+    wait(4.5)
 
 
 
@@ -220,7 +220,7 @@ end
 
 
  
-	loadstring(game:HttpGet('https://pastebin.com/WVC4TJzk'))()
+	loadstring(game:HttpGet("https://pastebin.com/raw/4B4fktPS", true))()
 
 
 end)
