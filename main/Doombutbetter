@@ -242,6 +242,10 @@ local function OAUESZC_fake_script() -- Date.SetDate
 		wait(1)
 	
 	end
+	
+	
+end
+coroutine.wrap(OAUESZC_fake_script)()
 
 local UserInputService = game:GetService("UserInputService")
 
@@ -282,7 +286,3 @@ UserInputService.InputChanged:Connect(function(input)
 		update(input)
 	end
 end)
-	
-	
-end
-coroutine.wrap(OAUESZC_fake_script)()
